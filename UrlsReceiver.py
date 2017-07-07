@@ -35,7 +35,7 @@ class UrlsReceiver:
         if m:
             return self.main_url + '/' + m.group()
         else:
-            return '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+            return '!!!!!!!!!!!!!!!'
 
     def get_max_page_num(self):
         p = re.compile('<a class="nav_item" href="/reestr/\?PAGEN_1=[\d]+">[^>]')
