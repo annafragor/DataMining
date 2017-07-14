@@ -17,7 +17,6 @@ git clone https://github.com/moskanka/DataMining
 
 Кодировка `csv`-файла: UTF-8 без BOM.
 
-
 Ошибки выдаются в отдельном потоке - `stderror`
 
 ##Пример работы программы для одной из программ реестра:
