@@ -39,4 +39,4 @@ doxygen Doxyfile
 cd html
 gnome-open index.html
 ```
-Так же можно вручную открыть файл index.html в удобном вам браузере.
+Так же можно вручную открыть файл `index.html` в удобном вам браузере.
