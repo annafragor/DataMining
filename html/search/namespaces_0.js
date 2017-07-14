@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reestr_5fspider',['reestr_spider',['../namespacereestr__spider.html',1,'']]]
+  ['get_5furlslist',['get_urlslist',['../namespaceget__urlslist.html',1,'']]]
 ];

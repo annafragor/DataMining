@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writer',['writer',['../classCsvWriter_1_1CsvWriter.html#a46802d46472b31cff937ba338ec9aa31',1,'CsvWriter::CsvWriter']]]
+  ['name',['name',['../classreestr__spider_1_1ReestrSpider.html#aacc299cb0284b8bed690b8326c7a032e',1,'reestr_spider::ReestrSpider']]]
 ];

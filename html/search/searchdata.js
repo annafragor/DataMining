@@ -1,27 +1,30 @@
 var indexSectionsWithContent =
 {
-  0: "_acdfgimnprstuwÐ",
+  0: "_acdfghimnprstuwÐ",
   1: "cdru",
-  2: "_adfgmps",
-  3: "adfinstw",
-  4: "Ð"
+  2: "gpr",
+  3: "_adfgmps",
+  4: "acdfhimnpstuw",
+  5: "Ð"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "functions",
-  3: "variables",
-  4: "pages"
+  2: "namespaces",
+  3: "functions",
+  4: "variables",
+  5: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "Указатель",
   1: "Классы",
-  2: "Функции",
-  3: "Переменные",
-  4: "Страницы"
+  2: "Пространства имен",
+  3: "Функции",
+  4: "Переменные",
+  5: "Страницы"
 };
 

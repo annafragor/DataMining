@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['id_5frow',['id_row',['../classCsvWriter_1_1CsvWriter.html#a7900ae93bb5ed7cf1896056c3f58e1d5',1,'CsvWriter::CsvWriter']]]
+  ['html_5fcode',['html_code',['../classUrlsReceiver_1_1UrlsReceiver.html#a4a9800032de527abd7fbc8dfed704d53',1,'UrlsReceiver::UrlsReceiver']]]
 ];

@@ -5,25 +5,33 @@ import re
 
 ## @brief Получатель списка ссылок
 #  @details Класс, с помощью которого можно получить список ссылок на все российские прораммы
-#  для ЭВМ и БД из единого реестра `https://reestr.minsvyaz.ru/reestr/`
+#  для ЭВМ и БД из единого реестра <i><b>https://reestr.minsvyaz.ru/reestr/</b></i>
 class UrlsReceiver:
     ## @brief Конструктор
     #  @param self
     #  @param main_url Ссылка на первую страницу реестра, с которой потом будет осуществляться
     #  переход на остальные страницы
     def __init__(self, main_url):
+        ## Ссылка, которой инициализируется класс
         self.main_url = main_url
+
+        ## Текст, обрабатываемой страницы
         self.html_code = ''
-        self.answer = None
+
+        ## Массив ссылок с одной страницы реестра
         self.urls = []
+
+        ## Количество страниц в реестре
         self.page_num = 0
+
+        ## Переменная, для запросов к страницам
         self.context = ssl._create_unverified_context()
 
-    ## @brief Метод, получающий html-кода страницы
+    ## @brief Метод, получающий <i><b>html</b></i>-кода страницы
     #  @param self
     #  @param url Ссылка на страницу, html-код которой необходимо получить
-    #  @details html-код страницы получается с помощью библиотеки `urllib.request`. Далее он
-    #  записывается в поле `self.html_code`.
+    #  @details html-код страницы получается с помощью библиотеки <i><b>urllib.request</b></i>. Далее он
+    #  записывается в поле <i><b>self.html_code</b></i>.
     def get_html_code(self, url):
         doc = urllib.request.urlopen(url, context=self.context)
         # self.answer = doc.read()
@@ -35,7 +43,7 @@ class UrlsReceiver:
     #  @param self
     #  @param page_num Номер страницы реестра, с которой получается список ссылок
     #  @details Внутри метода составлено регулярное выражение, по которому выбираются все ссылки в
-    #  html-коде страницы, после чего записываются в файл `urls.txt`. После обработки очередной
+    #  html-коде страницы, после чего записываются в файл <i><b>urls.txt</b></i>. После обработки очередной
     #  страницы в стандартный вывод пишется ее номер.
     def get_urls_from_page(self, page_num):
         p = re.compile('<a href="/reestr/[\d]+/">')
@@ -50,8 +58,8 @@ class UrlsReceiver:
         file.close()
 
     ## @brief Метод, приводящий в нормальный вид ссылку, полученную из html-кода страницы
-    #  @param url Строка вида `/reestr/123456/`
-    #  @return Ссылку вида `https://reestr.minsvyaz.ru/reestr/123456`
+    #  @param url Строка вида <i><b>/reestr/123456/</b></i>
+    #  @return Ссылку вида <i><b>https://reestr.minsvyaz.ru/reestr/123456</b></i>
     def make_url(self, url):
         p = re.compile('[\d]+/')
         m = p.search(url)
@@ -61,7 +69,7 @@ class UrlsReceiver:
             return 'Mistake!'
 
     ## @brief Метод, получающий количество страниц в реестре
-    #  @details В переменную `self.page_num` записывается число страниц в реестре с ссылками на
+    #  @details В переменную <i><b>self.page_num</b></i> записывается число страниц в реестре с ссылками на
     #  ПО
     def get_max_page_num(self):
         p = re.compile('<a class="nav_item" href="/reestr/\?PAGEN_1=[\d]+">[^>]')
@@ -74,11 +82,10 @@ class UrlsReceiver:
         self.page_num = max(res)
 
     ## @brief Главный метод
-    #  @details Метод, после запуска которого последовательно обходятся все страницы с ссылками реестра
-    #  , с которых в файл `urls.txt` записываются ссылки на продукты, каждую из которых впоследствии
-    #  надо будет обработать и составить `.csv` файл
+    #  @details Метод, после запуска которого последовательно обходятся все страницы с ссылками реестра,
+    #  с которых в файл <i><b>urls.txt</b></i> записываются ссылки на продукты, каждую из которых впоследствии
+    #  надо будет обработать и составить <i><b>.csv</b></i>-файл
     def parse_reestr(self):
-
         self.get_html_code(self.main_url)
         self.get_max_page_num()
 

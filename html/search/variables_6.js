@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['title_5frow',['title_row',['../classCsvWriter_1_1CsvWriter.html#ae5e24b59bde75109c2ea93bbf7e69ddb',1,'CsvWriter::CsvWriter']]],
-  ['type_5fapp_5frow',['type_app_row',['../classCsvWriter_1_1CsvWriter.html#ace04c34812ce9261cafeda325461fa56',1,'CsvWriter::CsvWriter']]]
+  ['main_5furl',['main_url',['../classUrlsReceiver_1_1UrlsReceiver.html#a26ea003c345156c0e7cdeb49750b15f2',1,'UrlsReceiver.UrlsReceiver.main_url()'],['../namespaceget__urlslist.html#aaad38f69fe4fce1dd2d853a315689dc1',1,'get_urlslist.main_url()']]]
 ];

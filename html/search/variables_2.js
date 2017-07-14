@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['file',['file',['../classCsvWriter_1_1CsvWriter.html#a6550d0a2ebdbea5598569e289ec4c6b3',1,'CsvWriter::CsvWriter']]]
+  ['date_5frow',['date_row',['../classCsvWriter_1_1CsvWriter.html#a9b4127aab4f2b7db22c1f1d6fb86ac2c',1,'CsvWriter::CsvWriter']]]
 ];

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# @package reestr_spider
-## Паук для страницы реестра
+## @package reestr_spider
+# Паук для страницы реестра
 import CsvWriter as cw
 import scrapy
 import re
