@@ -1,0 +1,90 @@
+\hypertarget{classreestr__spider_1_1ReestrSpider}{}\section{Класс reestr\+\_\+spider.\+Reestr\+Spider}
+\label{classreestr__spider_1_1ReestrSpider}\index{reestr\+\_\+spider.\+Reestr\+Spider@{reestr\+\_\+spider.\+Reestr\+Spider}}
+
+
+Класс паука  
+
+
+Граф наследования\+:reestr\+\_\+spider.\+Reestr\+Spider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreestr__spider_1_1ReestrSpider}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classreestr__spider_1_1ReestrSpider_aefeae36f75466e6df09087955be618ff}{start\+\_\+requests} (self)
+\begin{DoxyCompactList}\small\item\em Генератор запросов \end{DoxyCompactList}\item 
+def \hyperlink{classreestr__spider_1_1ReestrSpider_a1995683a0087b22c906ea7806c1cb3d7}{parse} (self, response)
+\begin{DoxyCompactList}\small\item\em Парсер ответа с сервера \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classreestr__spider_1_1ReestrSpider_ac04a7814ce5c2beb13a2ad733cfd49ff}{delete\+\_\+spaces} (line)
+\begin{DoxyCompactList}\small\item\em Метод, удаляющий лишние пробельные символы в строке \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classreestr__spider_1_1ReestrSpider_aacc299cb0284b8bed690b8326c7a032e}\label{classreestr__spider_1_1ReestrSpider_aacc299cb0284b8bed690b8326c7a032e}} 
+string \hyperlink{classreestr__spider_1_1ReestrSpider_aacc299cb0284b8bed690b8326c7a032e}{name} = \char`\"{}reestr\char`\"{}
+\begin{DoxyCompactList}\small\item\em Уникальное название, идентифицирующее паука \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс паука 
+
+Класс, который парсит все страницы реестра, вычленяя необходимые данные с каждой из них 
+
+\subsection{Методы}
+\mbox{\Hypertarget{classreestr__spider_1_1ReestrSpider_ac04a7814ce5c2beb13a2ad733cfd49ff}\label{classreestr__spider_1_1ReestrSpider_ac04a7814ce5c2beb13a2ad733cfd49ff}} 
+\index{reestr\+\_\+spider\+::\+Reestr\+Spider@{reestr\+\_\+spider\+::\+Reestr\+Spider}!delete\+\_\+spaces@{delete\+\_\+spaces}}
+\index{delete\+\_\+spaces@{delete\+\_\+spaces}!reestr\+\_\+spider\+::\+Reestr\+Spider@{reestr\+\_\+spider\+::\+Reestr\+Spider}}
+\subsubsection{\texorpdfstring{delete\+\_\+spaces()}{delete\_spaces()}}
+{\footnotesize\ttfamily def reestr\+\_\+spider.\+Reestr\+Spider.\+delete\+\_\+spaces (\begin{DoxyParamCaption}\item[{}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Метод, удаляющий лишние пробельные символы в строке 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em line} & Строка, которую надо изменить \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Очищенная от лишних пробелов строка Этот метод используется для того, чтобы удалять лишние пробелы и символы табуляции, которые могут встретиться в тексте html-\/кода страницы, полученного в ответ от сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classreestr__spider_1_1ReestrSpider_a1995683a0087b22c906ea7806c1cb3d7}\label{classreestr__spider_1_1ReestrSpider_a1995683a0087b22c906ea7806c1cb3d7}} 
+\index{reestr\+\_\+spider\+::\+Reestr\+Spider@{reestr\+\_\+spider\+::\+Reestr\+Spider}!parse@{parse}}
+\index{parse@{parse}!reestr\+\_\+spider\+::\+Reestr\+Spider@{reestr\+\_\+spider\+::\+Reestr\+Spider}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily def reestr\+\_\+spider.\+Reestr\+Spider.\+parse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{response }\end{DoxyParamCaption})}
+
+
+
+Парсер ответа с сервера 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em response} & Объект класса scrapy.\+http.\+Text\+Response, внутри которого находится содержимое страницы и методы для дальнейшей обработки ответа сервера.\\
+\hline
+\end{DoxyParams}
+Метод, который вызывается для обработки ответа, получаемого после каждого запроса. \mbox{\Hypertarget{classreestr__spider_1_1ReestrSpider_aefeae36f75466e6df09087955be618ff}\label{classreestr__spider_1_1ReestrSpider_aefeae36f75466e6df09087955be618ff}} 
+\index{reestr\+\_\+spider\+::\+Reestr\+Spider@{reestr\+\_\+spider\+::\+Reestr\+Spider}!start\+\_\+requests@{start\+\_\+requests}}
+\index{start\+\_\+requests@{start\+\_\+requests}!reestr\+\_\+spider\+::\+Reestr\+Spider@{reestr\+\_\+spider\+::\+Reestr\+Spider}}
+\subsubsection{\texorpdfstring{start\+\_\+requests()}{start\_requests()}}
+{\footnotesize\ttfamily def reestr\+\_\+spider.\+Reestr\+Spider.\+start\+\_\+requests (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Генератор запросов 
+
+\begin{DoxyReturn}{Возвращает}
+Итерируемый объект, содержащий список объектов scrapy.\+Request 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+data\+\_\+mining/spiders/reestr\+\_\+spider.\+py\end{DoxyCompactItemize}

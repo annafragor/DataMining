@@ -8,4 +8,4 @@ if __name__ == '__main__':
     file = open('urls.txt', 'w')
     file.close()
     worker = ur.UrlsReceiver(main_url)
-    worker.main_f()
+    worker.parse_reestr()
