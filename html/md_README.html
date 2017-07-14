@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>data_mining: DataMining</title>
+<title>data_mining: Автоматический веб-агрегатор для создания единой базы сертифицированных средств защиты информации</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,10 +60,28 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">DataMining </div>  </div>
+<div class="title">Автоматический веб-агрегатор для создания единой базы сертифицированных средств защиты информации </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>задание для летней практики </p>
+<div class="textblock"><ul>
+<li>Задание для летней практики 2017</li>
+</ul>
+<p>Приложение - консольное.</p>
+<p>Чтобы запустить программу, необходимо написать следующие команды в терминале: </p><div class="fragment"><div class="line">git clone https://github.com/moskanka/DataMining</div><div class="line">./get-reestr-mtmc.sh</div></div><!-- fragment --><p>В процессе работы приложение заходит на <a href="https://reestr.minsvyaz.ru/reestr/">сайт Единого реестра российских программ для ЭВМ и БД</a> и собирает оттуда необходимую информацию. Результаты записываются в файл <code>reestr.csv</code>, а так же выдаются прямо в консоль в <code>csv</code>-формате</p>
+<p>Кодировка <code>csv</code>-файла: UTF-8 без BOM.</p>
+<p>Ошибки выдаются в отдельном потоке - <code>stderror</code></p>
+<p><b>Пример работы программы для одной из программ реестра:</b></p>
+<ul>
+<li>Страница продукта: <div class="image">
+<img src="example_page.jpg" alt="example_page"/>
+</div>
+</li>
+<li>Выходной <code>csv</code>-файл: <div class="image">
+<img src="example_table.jpg" alt="example_table"/>
+</div>
+</li>
+<li>Если во входных данных нет искомого поля, то в него ставится значение по умолчанию, а если оно не оговоренно, то поле оставляется пустым. </li>
+</ul>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
