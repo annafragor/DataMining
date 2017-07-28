@@ -2,7 +2,7 @@
 
 # Scrapy settings for data_mining project
 #
-# For simplicity, this file contains only settings considered important or
+# For simplicity, this reestr contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
 #
 #     http://doc.scrapy.org/en/latest/topics/settings.html

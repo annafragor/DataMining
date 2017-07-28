@@ -93,7 +93,6 @@ class ReestrSpider(scrapy.Spider):
                 res_type_app = ''
                 for a in type_app:
                     res_type_app = res_type_app + self.delete_spaces(a) + '\n'
-
                 csv_worker.add('type_app', res_type_app[:-1])
 
             title = response.css('title::text').extract_first()
